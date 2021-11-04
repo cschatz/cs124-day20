@@ -4,11 +4,12 @@ import java.util.ArrayList;
 public class HeapPriorityQueue<E> {
 	
 	private class Entry {
-		E value;
 		int priority;
+		E value;
+		
 		
 		// Constructor
-		public Entry(E value, int priority) {
+		public Entry(int priority, E value) {
 			this.value = value;
 			this.priority = priority;
 		}
@@ -40,9 +41,9 @@ public class HeapPriorityQueue<E> {
 	}
 	
 	
-	public void insert(E value, int priority) {
+	public void insert(int priority, E value) {
 		// Create an Entry object
-		Entry item = new Entry(value, priority);
+		Entry item = new Entry(priority, value);
 		
 		// Place the item in the last position
 		items.add(item);
