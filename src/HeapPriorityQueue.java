@@ -1,3 +1,7 @@
+// A(3), B(2), C(1), D(2)
+
+
+
 import java.util.ArrayList;
 
 
@@ -6,7 +10,6 @@ public class HeapPriorityQueue<E> {
 	private class Entry {
 		int priority;
 		E value;
-		
 		
 		// Constructor
 		public Entry(int priority, E value) {
@@ -78,7 +81,6 @@ public class HeapPriorityQueue<E> {
 		//  then copy moved into the final position
 		// TO DO:
 		// Implement this set of steps
-		
 		
 		
 		return result; 
