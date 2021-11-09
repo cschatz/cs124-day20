@@ -42,9 +42,20 @@ public class Day20 {
 		System.out.println("Have a nice day!");
 	}
 	
+	public static void hashExample() {
+		Scanner scanner = new Scanner(System.in);
+		while(true) {
+			System.out.print("Type anything: ");
+			String userText = scanner.nextLine();
+			System.out.println("Hash value: " + userText.hashCode());
+		}
+	}
+		
+	
 
 	public static void main(String[] args) {
-		mapExample();
+		// mapExample();
+		hashExample();
 
 	}
 
