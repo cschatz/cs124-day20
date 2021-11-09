@@ -43,11 +43,13 @@ public class Day20 {
 	}
 	
 	public static void hashExample() {
+		final int TABLE_SIZE = 7;
 		Scanner scanner = new Scanner(System.in);
 		while(true) {
 			System.out.print("Type anything: ");
 			String userText = scanner.nextLine();
-			System.out.println("Hash value: " + userText.hashCode());
+			int bucketNumber = Math.abs(userText.hashCode()) % TABLE_SIZE;
+			System.out.println("That goes in bucket #" + bucketNumber);
 		}
 	}
 		
